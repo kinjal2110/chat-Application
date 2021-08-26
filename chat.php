@@ -60,8 +60,6 @@ if (!isset($_SESSION['unique_id'])) {
                 <button><i class="fab fa-telegram-plane"></i></button>
             </form>
             
-            <form action="#" class="typing-area" autocomplete="off">
-            </form>
         </section>
     </div>
 
