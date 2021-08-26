@@ -19,7 +19,7 @@
            if(mysqli_num_rows($query) > 0){
             $row = mysqli_fetch_assoc($query);
             // echo '<pre>';
-            // print_r($row);
+            // print_r($row); 
           }else{
             header("location: users.php");
           }
@@ -34,10 +34,10 @@
       <div class="chat-box">
 
       </div>
-      <form action="#" class="typing-area">
+      <form action="" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
         <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
-        <button><i class="fab fa-telegram-plane"></i></button>
+        <button class="button"><i class="fab fa-telegram-plane"></i></button>
       </form>
     </section>
   </div>

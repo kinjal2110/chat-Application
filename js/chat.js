@@ -1,10 +1,13 @@
+debugger;
 const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
 sendBtn = form.querySelector("button"),
 chatBox = document.querySelector(".chat-box");
 
-
+form.onsubmit = (e)=>{
+    e.preventDefault();
+}
 
 inputField.focus();
 inputField.onkeyup = ()=>{
@@ -17,9 +20,7 @@ inputField.onkeyup = ()=>{
 
 sendBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    console.log('test');
-    xhr.open("POST", "../php/insert-chat.php", true);
-    console.log('test1');
+    xhr.open("POST", "php/insert-chat.php", true);
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
