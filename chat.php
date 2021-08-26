@@ -45,7 +45,7 @@ if (!isset($_SESSION['unique_id'])) {
                     <div class="details">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nobis aliquam consectetur cumque officia sapiente commodi sunt amet eligendi ab facilis beatae fuga eos voluptatem earum deserunt, minima provident illo.</p>
                     </div>
-                </div>
+                </div> 
                 <div class="chat incoming">
                     <img src="images/istockphoto-539973144-170667a.jpg" alt="">
                     <div class="details">
