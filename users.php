@@ -13,7 +13,7 @@
                 <?php
                 include_once "php/config.php";
                     $sql = mysqli_query($con,"SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
-                    if(mysqli_num_rows($sql)>0) //if rows  are more than 0 in database
+                        if(mysqli_num_rows($sql)>0) //if rows  are more than 0 in database
                     {
                         $row = mysqli_fetch_assoc($sql);
                     }
@@ -39,6 +39,7 @@
         </section>
     </div>
     <script src="js/users.js"></script>
+   
 </body>
 
 </html>
